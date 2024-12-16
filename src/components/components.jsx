@@ -3,3 +3,5 @@ export { default as CardVerticleSlider } from "./CardVerticleSlider/CardVerticle
 export { default as StatsLogosSlider } from "./StatsLogosSlider/StatsLogosSlider";
 export { default as Footer } from "./Footer/Footer";
 export { default as Navbar } from "./Navbar/Navbar";
+export { default as ProjectDiscovery } from "./ProjectDiscovery/ProjectDiscovery";
+export { default as StepsScroll } from "./StepsScroll/StepsScroll";

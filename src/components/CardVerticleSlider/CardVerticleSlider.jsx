@@ -111,7 +111,6 @@ const CardVerticleSlider = () => {
               to a multimillion audience, gain early adopters, generate first
               revenue, and create a solid basis for further business growth.
             </p>
-            <button className="py-3">Let's get started</button>
           </div>
 
           <div
@@ -132,7 +131,6 @@ const CardVerticleSlider = () => {
               workflows with a custom Slack bot tailored to your specific
               business needs.
             </p>
-            <button className="py-3">Let's get started</button>
           </div>
         </div>
       </div>
