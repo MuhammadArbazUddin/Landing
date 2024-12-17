@@ -4,7 +4,8 @@ import heroImg from "../../assets/Red_and_White_Fingerprint_Cybersecurity_Logo-r
 const Hero = () => {
   return (
     <div
-      className="bg-cover bg-center h- bg-fixed bg-no-repeat"
+      id="home"
+      className="bg-cover bg-center  bg-fixed bg-no-repeat"
       style={{
         backgroundImage:
           "url('https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/662e88bd0acef9692037ebd7_discovery-numbers-bg.webp')",
@@ -27,7 +28,7 @@ const Hero = () => {
           </p>
           <button className="button-54">See Pricing</button>
         </div>
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 flex justify-center up-down">
           <img src={heroImg} alt="" className="w-[80%] md:w-[30rem] h-auto" />
         </div>
       </div>

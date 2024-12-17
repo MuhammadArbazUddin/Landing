@@ -1,10 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleClickOutside = (event) => {
+    if (event.target.closest(".navbar") === null) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Close the menu when a link is clicked
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-white shadow-md relative z-50">
+    <nav className="flex items-center justify-between py-4 bg-[#F3F6F7] border-b sticky top-0 z-50 px-4 sm:px-16 navbar">
       {/* Logo */}
       <div className="flex items-center space-x-1">
         <a href="/" aria-label="Home">
@@ -16,27 +33,49 @@ const Navbar = () => {
       </div>
 
       {/* Menu Items */}
-      <div className="hidden md:block">
-        <ul className="flex items-center space-x-6 text-sm font-medium text-gray-700">
-          <li className="relative group">
-            <span className="cursor-pointer">Services</span>
-          </li>
-          <li className="flex items-center space-x-1">
-            <span>Products</span>
-          </li>
-          <li>
-            <span>Pricing</span>
-          </li>
-          <li className="relative group">
-            <span className="cursor-pointer">Company</span>
-          </li>
-        </ul>
-      </div>
 
       {/* Call to Action and Menu */}
-      <div className="flex items-center space-x-5">
+      <div className="flex items-center space-x-10">
+        <div className="hidden md:block">
+          <ul className="flex items-center space-x-10 text-sm font-bold text-gray-700">
+            <li className="relative group">
+              <a
+                href="#services"
+                className="cursor-pointer"
+                onClick={handleLinkClick}
+              >
+                Services
+              </a>
+            </li>
+            <li className="flex items-center space-x-1">
+              <a href="#about-us" onClick={handleLinkClick}>
+                About Us
+              </a>
+            </li>
+            <li className="">
+              <a href="#our-work" onClick={handleLinkClick}>
+                Our Work
+              </a>
+            </li>
+            <li className="relative group ">
+              <a
+                href="#our-offers"
+                className="cursor-pointer"
+                onClick={handleLinkClick}
+              >
+                Our Offers
+              </a>
+            </li>
+          </ul>
+        </div>
         {/* Get in Touch Button */}
-        <button className="hidden md:block button-54">Get In Touch</button>
+        <a
+          href="#contact-us"
+          className="hidden md:block button-54"
+          onClick={handleLinkClick}
+        >
+          Get In Touch
+        </a>
         {/* Hamburger Menu */}
         <div
           className="flex items-center justify-center w-12 h-12 border border-black rounded-full cursor-pointer"
@@ -74,12 +113,55 @@ const Navbar = () => {
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 p-6 text-gray-700 text-sm font-medium">
             {/* Left Section */}
             <div>
-              <h3 className="font-mono font-bold text-2xl mb-2">Services</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="#services"
+                    className="font-mono font-bold text-2xl"
+                    onClick={handleLinkClick}
+                  >
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about-us"
+                    className="font-mono font-bold text-2xl"
+                    onClick={handleLinkClick}
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#our-work"
+                    className="font-mono font-bold text-2xl"
+                    onClick={handleLinkClick}
+                  >
+                    Our Work
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#our-offers"
+                    className="font-mono font-bold text-2xl"
+                    onClick={handleLinkClick}
+                  >
+                    Our Offers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact-us"
+                    className="font-mono font-bold text-2xl"
+                    onClick={handleLinkClick}
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
               <ul className="space-y-2 font-sans text-lg">
                 <li>Discovery phase services</li>
-                <li>For early-stage startups</li>
-                <li>For growth-stage startups</li>
-                <li>Slack bot development</li>
                 <li>CTO as a service</li>
                 <li>All services</li>
               </ul>

@@ -14,7 +14,7 @@ const ManOnScroll = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-white ">
+    <section className="py-16 bg-white " id="our-offers">
       <div className="container mx-auto px-4 z-[5] relative ">
         <img
           src={png}

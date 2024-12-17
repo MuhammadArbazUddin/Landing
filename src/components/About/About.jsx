@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center md:flex-row min-h-screen bg-[#FAED00]">
+    <div
+      className="flex flex-col items-center md:flex-row min-h-screen bg-[#FAED00]"
+      id="about-us"
+    >
       {/* Left Section */}
       <div className="w-full sm:w-[50%] p-6 md:p-16 space-y-6 md:sticky md:top-0">
         <img

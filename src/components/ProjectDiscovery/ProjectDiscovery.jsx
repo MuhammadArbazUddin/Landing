@@ -36,7 +36,10 @@ const ProjectDiscovery = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row items-start min-h-screen">
+    <div
+      className="flex flex-col md:flex-row items-start min-h-screen"
+      id="services"
+    >
       {/* Left Section */}
       <div className="w-full md:w-1/2 p-6 md:p-16 space-y-6 md:sticky md:top-0">
         <h1 className="text-3xl md:text-5xl font-mono font-bold">

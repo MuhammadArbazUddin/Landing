@@ -27,7 +27,10 @@ const Contact = () => {
   ];
 
   return (
-    <section className="px-4 py-6 my-4 md:px-16 md:py-12 md:my-8">
+    <section
+      className="px-4 py-6 my-4 md:px-16 md:py-12 md:my-8 "
+      id="contact-us"
+    >
       <div className="text-center py-6 mb-6">
         <h1 className="text-4xl font-mono font-bold">
           Get a Tailored Quote for Your Software Project
