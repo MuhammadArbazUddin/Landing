@@ -27,8 +27,8 @@ const Contact = () => {
   ];
 
   return (
-    <section className="px-16 py-12 my-8">
-      <div className="text-center py-10 mb-8">
+    <section className="px-4 py-6 my-4 md:px-16 md:py-12 md:my-8">
+      <div className="text-center py-6 mb-6">
         <h1 className="text-4xl font-mono font-bold">
           Get a Tailored Quote for Your Software Project
         </h1>
@@ -36,7 +36,7 @@ const Contact = () => {
           Risk-free, Trusted Software Development Company
         </p>
       </div>
-      <div className="flex flex-col gap-32 md:flex-row">
+      <div className="flex flex-col gap-16 md:flex-row">
         {/* Left Section */}
         <div className="md:w-1/2 mb-8 md:mb-0 ">
           <h2 className="text-3xl font-mono font-bold mb-6">
@@ -83,27 +83,27 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="First name*"
-                className="w-1/2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
+                className="w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
               />
               <input
                 type="text"
                 placeholder="Last name"
-                className="w-1/2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
+                className="w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
               />
             </div>
             <input
               type="email"
               placeholder="Email*"
-              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
+              className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
             />
             <input
               type="tel"
               placeholder="Phone number*"
-              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
+              className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
             />
             <textarea
               placeholder="Briefly describe your project requirements or objective of the discussion"
-              className="w-full p-3 border rounded-md h-32 focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
+              className="w-full p-2 border rounded-md h-32 focus:outline-none focus:ring-2 focus:ring-[#FAED00]"
             ></textarea>
             <button type="submit" className="button-54">
               Schedule Now
