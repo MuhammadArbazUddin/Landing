@@ -2,20 +2,59 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const ProjectDiscovery = () => {
+  const sections = [
+    {
+      id: 1,
+      title: "YOUTUBE",
+      description:
+        "YouTube Shorts Management: We optimize your content for YouTube Shorts, generating millions of views.",
+      imageUrl:
+        "https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png",
+    },
+    {
+      id: 2,
+      title: "META",
+      description:
+        "Media Partners: We tailor your content for Facebook, unlocking revenue through Reels.",
+      imageUrl: "https://pngimg.com/d/meta_PNG5.png",
+    },
+    {
+      id: 3,
+      title: "SNAPCHAT",
+      description:
+        "Snap Discover Show: Partnering with Snap, we handle re-editing and performance analysis while you keep 100% ownership.",
+      imageUrl: "https://pngimg.com/d/snapchat_PNG41.png",
+    },
+    {
+      id: 4,
+      title: "TIKTOK",
+      description:
+        "TikTok Creator Fund: We monetize your short-form content across platforms, turning hobbies into revenue.",
+      imageUrl:
+        "https://iconape.com/wp-content/files/fd/121669/svg/tiktok-logo-tik-tok-logo-icon-png-svg.png",
+    },
+  ];
+
   return (
     <div className="flex flex-col md:flex-row items-start min-h-screen">
       {/* Left Section */}
       <div className="w-full md:w-1/2 p-6 md:p-16 space-y-6 md:sticky md:top-0">
         <h1 className="text-3xl md:text-5xl font-bold">
-          Our Project Discovery Process
+          Best solution for business
         </h1>
-        <p className="text-base md:text-lg">
-          Our team has conducted project discovery numerous times, for both our
-          own startups and clients' products. We've established a reliable
-          process that takes you closer to a crisp product plan and beyond with
-          every step.
+        <p className="text-base md:text-md">
+          We anticipate challenges and proactively develop solutions.
+          Sociallywiredinc excels in crisis management and problem-solving,
+          ensuring your brand is resilient in the face of challenges and adapts
+          swiftly to industry shifts. Sociallywiredinc has garnered recognition
+          for excellence in the industry. Our portfolio showcases successful
+          campaigns and projects across diverse sectors, illustrating our
+          capability to deliver impactful results. Your success is our success.
+          Sociallywiredinc thrives on collaborative excellence, working closely
+          with you to understand your vision and goals. Consider us an extension
+          of your team, dedicated to achieving your brand objectives.
         </p>
-        <button className="button-54">Let's Talk</button>
+        <button className="button-54">All Services</button>
       </div>
 
       {/* Right Section */}
@@ -26,72 +65,26 @@ const ProjectDiscovery = () => {
         viewport={{ once: false }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        {/* Section 1 */}
-        <motion.div
-          className="space-y-4 md:space-y-6 mb-8 md:mb-12 p-6  border-2 border-black text-left"
-          initial={{ opacity: 0, y: 20, backgroundColor: "#ffffff" }}
-          whileInView={{ opacity: 1, y: 0, backgroundColor: "#FAED00" }}
-          whileHover={{ backgroundColor: "#ffffff", scale: 1.02 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          <img
-            src="https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/66328069b84459687313540d_discovery-process-1-p-500.webp"
-            alt=""
-            className="w-full"
-          />
-          <h1 className="text-xl md:text-xl font-bold">Introduction</h1>
-          <p className="text-sm md:text-sm">
-            We schedule a series of intro calls with a Business Analyst. During
-            these calls, we gather the initial requirements to get a clear
-            picture of your business idea, main goals, and the value you
-            envision for the future product.
-          </p>
-        </motion.div>
-        {/* Section 2 */}
-        <motion.div
-          className="space-y-4 md:space-y-6 mb-8 md:mb-12 p-6  border-2 border-black text-left"
-          initial={{ opacity: 0, y: 20, backgroundColor: "#ffffff" }}
-          whileInView={{ opacity: 1, y: 0, backgroundColor: "#FAED00" }}
-          whileHover={{ backgroundColor: "#ffffff", scale: 1.02 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-        >
-          <img
-            src="https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/66328069b84459687313540d_discovery-process-1-p-500.webp"
-            alt=""
-            className="w-full"
-          />
-          <h1 className="text-xl md:text-xl font-bold">Introduction</h1>
-          <p className="text-sm md:text-sm">
-            We schedule a series of intro calls with a Business Analyst. During
-            these calls, we gather the initial requirements to get a clear
-            picture of your business idea, main goals, and the value you
-            envision for the future product.
-          </p>
-        </motion.div>
-        {/* Section 3 */}
-        <motion.div
-          className="space-y-4 md:space-y-6 mb-8 md:mb-12 p-6  border-2 border-black text-left"
-          initial={{ opacity: 0, y: 20, backgroundColor: "#ffffff" }}
-          whileInView={{ opacity: 1, y: 0, backgroundColor: "#FAED00" }}
-          whileHover={{ backgroundColor: "#ffffff", scale: 1.02 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-        >
-          <img
-            src="https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/66328069b84459687313540d_discovery-process-1-p-500.webp"
-            alt=""
-            className="w-full"
-          />
-          <h1 className="text-xl md:text-xl font-bold">Introduction</h1>
-          <p className="text-sm md:text-sm">
-            We schedule a series of intro calls with a Business Analyst. During
-            these calls, we gather the initial requirements to get a clear
-            picture of your business idea, main goals, and the value you
-            envision for the future product.
-          </p>
-        </motion.div>
+        {sections.map((section, index) => (
+          <motion.div
+            key={index}
+            className="space-y-4 md:space-y-6 mb-8 md:mb-12 p-6 border-2 border-black text-left"
+            initial={{ opacity: 0, y: 20, backgroundColor: "#ffffff" }}
+            whileInView={{ opacity: 1, y: 0, backgroundColor: "#FAED00" }}
+            whileHover={{ backgroundColor: "#ffffff", scale: 1.02 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
+          >
+            <div className="text-xl bg-white border border-black rounded-full w-[50px] h-[50px] flex items-center justify-center font-bold">
+              {section.id}
+            </div>
+            <div className="flex justify-center">
+              <img src={section.imageUrl} alt="" className="w-[120px]" />
+            </div>
+            <h1 className="text-xl md:text-xl font-bold">{section.title}</h1>
+            <p className="text-sm md:text-sm">{section.description}</p>
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );

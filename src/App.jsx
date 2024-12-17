@@ -1,7 +1,10 @@
 import React from "react";
 import {
+  About,
   CardVerticleSlider,
+  Contact,
   Footer,
+  Hero,
   ManOnScroll,
   Navbar,
   ProjectDiscovery,
@@ -13,9 +16,12 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <StepsScroll />
+      <Hero />
       <ManOnScroll />
+      <About />
+      <Contact />
       <CardVerticleSlider />
+      <StepsScroll />
       <ProjectDiscovery />
       <StatsLogosSlider />
       <Footer />

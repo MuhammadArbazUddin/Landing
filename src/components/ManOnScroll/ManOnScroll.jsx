@@ -19,22 +19,21 @@ const ManOnScroll = () => {
         <img
           src={png}
           alt=""
-          className="absolute top-[20rem] w-[1200px]  z-[-1]"
+          className="hidden md:block absolute top-[22rem] w-[1200px]  z-[-1]"
         />
         <h2 className="text-4xl font-bold text-gray-900 mb-12 text-left">
-          EASY AS <span className="text-yellow-500">1–2–3</span>
+          Special <span className="text-[#FAED00]">Offers</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Step 1 */}
           <div className="relative bg-[#FAED00] p-8  border border-black  shadow hover:shadow-none hover:cursor-pointer transition-all duration-300">
             <h3 className="text-4xl font-bold text-gray-900 mb-4">1</h3>
             <h4 className="text-xl font-semibold text-gray-900 mb-2">
-              Schedule a call
+              Earn With Content
             </h4>
             <p className="text-gray-700 mb-4">
-              Complete the form and pick the best time. Ask us for an{" "}
-              <span className="font-bold">NDA</span> if required, and we are
-              happy to provide one.
+              Sign up as an influencer to connect with top brands, grow your
+              audience, and monetize your content through partnerships!
             </p>
             <CgArrowLongRight className="inline-block absolute bottom-2 right-8 w-8 h-8 text-gray-900" />
           </div>
@@ -43,11 +42,12 @@ const ManOnScroll = () => {
           <div className="p-8">
             <h3 className="text-4xl font-bold text-gray-900 mb-4">2</h3>
             <h4 className="text-xl font-semibold text-gray-900 mb-2">
-              Share project details
+              Switch Rev Share
             </h4>
             <p className="text-gray-700">
-              Tell us about your business challenges and the results you want to
-              achieve so we can start thinking about the solution.
+              Switch to our agency for exclusive influencer partnerships,
+              tailored campaigns, and dedicated support to maximize your brand
+              collaborations!
             </p>
           </div>
 
@@ -55,18 +55,18 @@ const ManOnScroll = () => {
           <div className="p-8">
             <h3 className="text-4xl font-bold text-gray-900 mb-4">3</h3>
             <h4 className="text-xl font-semibold text-gray-900 mb-2">
-              Review a proposal and sign a contract
+              Funds Seeding
             </h4>
             <p className="text-gray-700">
-              Once you are happy with the proposal, sign a contract, and we'll
-              get the ball rolling.
+              Become a fund publisher to support innovative projects, connect
+              with investors, and drive impactful change in your industry!
             </p>
           </div>
         </div>
         {/* Decorative elements */}
-        <div className="relative overflow-hidden mt-[-20px]">
+        <div className="relative overflow-hidden mt-[-20px] ">
           <div
-            className="flex"
+            className="hidden md:flex"
             style={{
               transform: `translateX(${scrollPosition * 0.5}px)`,
               transition: "transform 0.1s ease-out",
@@ -77,7 +77,7 @@ const ManOnScroll = () => {
               alt="Man Illustration"
               className="w-32 md:w-48 ml-[10rem]"
             />
-            <div className="w-[50rem] h-64 ml-[5rem] bg-white relative z-10"></div>
+            <div className="w-[50rem] h-64  ml-[5rem] bg-white relative z-10"></div>
           </div>
         </div>
       </div>
