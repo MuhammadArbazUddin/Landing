@@ -18,7 +18,7 @@ const About = () => {
 
       {/* Right Section */}
       <motion.div
-        className="w-full sm:w-[70%] p-6 md:p-16 md:px-[10rem] bg-white rounded-l-lg border-2 border-white"
+        className="w-full sm:w-[70%] pt-2 md:p-16 md:px-[10rem] bg-white rounded-l-lg border-2 border-white"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
