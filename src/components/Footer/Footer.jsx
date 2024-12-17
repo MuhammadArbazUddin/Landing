@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -175,9 +176,12 @@ const Footer = () => {
         <div className="mt-10 border-t border-gray-700 pt-4 text-base text-gray-400 flex flex-col md:flex-row justify-between">
           <p className="font-sans">© 2024 Upsilon LLC. All Rights Reserved</p>
           <div className="flex space-x-4">
-            <a href="/privacy-policy" className="hover:text-white font-sans">
+            <NavLink
+              to="/privacy-policy"
+              className="hover:text-white font-sans"
+            >
               Privacy Policy
-            </a>
+            </NavLink>
             <a href="/" className="hover:text-white font-sans">
               Terms of Service
             </a>
