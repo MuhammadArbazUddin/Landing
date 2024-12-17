@@ -39,10 +39,10 @@ const ProjectDiscovery = () => {
     <div className="flex flex-col md:flex-row items-start min-h-screen">
       {/* Left Section */}
       <div className="w-full md:w-1/2 p-6 md:p-16 space-y-6 md:sticky md:top-0">
-        <h1 className="text-3xl md:text-5xl font-bold">
+        <h1 className="text-3xl md:text-5xl font-mono font-bold">
           Best solution for business
         </h1>
-        <p className="text-base md:text-md">
+        <p className="text-base md:text-md font-sans">
           We anticipate challenges and proactively develop solutions.
           Sociallywiredinc excels in crisis management and problem-solving,
           ensuring your brand is resilient in the face of challenges and adapts
@@ -81,8 +81,12 @@ const ProjectDiscovery = () => {
             <div className="flex justify-center">
               <img src={section.imageUrl} alt="" className="w-[120px]" />
             </div>
-            <h1 className="text-xl md:text-xl font-bold">{section.title}</h1>
-            <p className="text-sm md:text-sm">{section.description}</p>
+            <h1 className="text-xl md:text-xl font-mono font-bold">
+              {section.title}
+            </h1>
+            <p className="text-sm md:text-sm font-sans">
+              {section.description}
+            </p>
           </motion.div>
         ))}
       </motion.div>

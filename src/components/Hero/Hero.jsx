@@ -1,4 +1,5 @@
 import React from "react";
+import heroImg from "../../assets/Red_and_White_Fingerprint_Cybersecurity_Logo-removebg-preview.png";
 
 const Hero = () => {
   return (
@@ -16,11 +17,11 @@ const Hero = () => {
     >
       <div className="pt-16 flex flex-col items-center md:flex-row justify-between container mx-auto px-4 z-[5] relative gap-32">
         <div className="w-full md:w-1/2 ">
-          <h1 className="text-black text-6xl leading-[60px] font-bold mb-5">
+          <h1 className="text-black text-6xl leading-[60px] font-mono font-bold mb-5">
             Optimize & Monetize
             <br />
           </h1>
-          <p className="text-black text-xl font-semibold mb-5">
+          <p className="text-black text-xl font-sans mb-5">
             Sociallywiredinc is a group of dedicated and innovative social media
             management experts that works with various content creators to help
             them raise the scope and reach of their platforms through curated,
@@ -29,13 +30,14 @@ const Hero = () => {
             personalized game plans for each client and their target
             demographic.
           </p>
-          <button className="button-54">See Pricing</button>
+          <button className="button-54 ">See Pricing</button>
         </div>
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 flex justify-center up-down">
           <img
-            src="https://www.greater-thought.com/wp-content/uploads/2020/12/websites-digital-icon-comp3.gif"
+            // src="https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/662d4f578b81c09beb6f53c1_discovery-introduction-p-500.webp"
+            src={heroImg}
             alt=""
-            className="w-[20rem]"
+            className="w-[30rem]"
           />
         </div>
       </div>

@@ -33,10 +33,10 @@ const CardVerticleSlider = () => {
 
   return (
     <div className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto ">
         <div
           id="card-slider"
-          className="max-w-5xl mx-auto relative"
+          className="max-w-7xl mx-8 relative"
           style={{ height: "200vh" }}
         >
           <div
@@ -48,10 +48,10 @@ const CardVerticleSlider = () => {
               transition: "top 0.5s ease-out",
             }}
           >
-            <h2 className="text-4xl font-extrabold mb-6 text-white">
+            <h2 className="text-4xl font-mono font-bold mb-6 text-white">
               Go Slack-First
             </h2>
-            <p className="text-white text-lg leading-relaxed mb-8 max-w-xl">
+            <p className="text-white text-lg leading-relaxed mb-8 max-w-xl font-sans">
               Think of the Slack App Directory as the Play Store for Android or
               App Store for iOS. It is a trusted hub where thousands of
               businesses and teams seek apps and automations to boost their
@@ -68,25 +68,25 @@ const CardVerticleSlider = () => {
               transition: "top 0.5s ease-out",
             }}
           >
-            <h2 className="text-4xl font-extrabold mb-6 text-black">
+            <h2 className="text-4xl font-mono font-bold mb-6 text-black">
               Seize Your Chance to Join This Company:
             </h2>
             <div className="grid grid-cols-3 gap-8 mt-8 max-w-xl">
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">2500+</div>
-                <p className="text-sm leading-relaxed">
+                <p className="text-sm leading-relaxed font-sans">
                   apps (and growing) in the Slack App Directory
                 </p>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">1 mln+</div>
-                <p className="text-sm leading-relaxed">
+                <p className="text-sm leading-relaxed font-sans">
                   developers building Slack apps and integrations
                 </p>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">52</div>
-                <p className="text-black text-sm leading-relaxed">
+                <p className="text-black text-sm leading-relaxed font-sans">
                   Slack apps used by the avg. enterprise customer
                 </p>
               </div>
@@ -102,10 +102,10 @@ const CardVerticleSlider = () => {
               transition: "top 0.5s ease-out",
             }}
           >
-            <h2 className="text-4xl font-extrabold mb-6">
+            <h2 className="text-4xl font-mono font-bold mb-6">
               Grow your Business from a Slack App
             </h2>
-            <p className="text-lg leading-relaxed mb-8 max-w-xl">
+            <p className="text-lg leading-relaxed mb-8 max-w-xl font-sans">
               Leverage the potential of Slack App Directory - launch your pilot
               SaaS project as the Slack-native solution! Showcase your product
               to a multimillion audience, gain early adopters, generate first
@@ -122,10 +122,10 @@ const CardVerticleSlider = () => {
               transition: "top 0.5s ease-out",
             }}
           >
-            <h2 className="text-4xl font-extrabold mb-6">
+            <h2 className="text-4xl font-mono font-bold mb-6">
               Streamline Your Processes with a Slack Bot
             </h2>
-            <p className="text-gray-700 text-lg leading-relaxed mb-8 max-w-xl">
+            <p className="text-gray-700 text-lg leading-relaxed mb-8 max-w-xl font-sans">
               Transform tedious and time-consuming tasks, such as employee
               onboarding, feedback collection, or online support, into automated
               workflows with a custom Slack bot tailored to your specific

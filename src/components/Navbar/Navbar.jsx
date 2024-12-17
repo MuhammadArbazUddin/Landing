@@ -7,8 +7,12 @@ const Navbar = () => {
     <nav className="flex items-center justify-between px-6 py-4 bg-white shadow-md relative z-50">
       {/* Logo */}
       <div className="flex items-center space-x-1">
-        <span className="font-bold text-2xl">upsilon</span>
-        <span className="text-yellow-500 text-2xl">*</span>
+        <a href="/" aria-label="Home">
+          <img
+            src="https://sociallywiredinc.com/wp-content/uploads/thegem-logos/logo_5ed0fad380d2d79934f28a88e69d3c71_1x.png"
+            alt="Company Logo"
+          />
+        </a>
       </div>
 
       {/* Menu Items */}
@@ -70,8 +74,8 @@ const Navbar = () => {
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 p-6 text-gray-700 text-sm font-medium">
             {/* Left Section */}
             <div>
-              <h3 className="font-bold text-2xl mb-2">Services</h3>
-              <ul className="space-y-2 text-lg">
+              <h3 className="font-mono font-bold text-2xl mb-2">Services</h3>
+              <ul className="space-y-2 font-sans text-lg">
                 <li>Discovery phase services</li>
                 <li>For early-stage startups</li>
                 <li>For growth-stage startups</li>
@@ -79,16 +83,24 @@ const Navbar = () => {
                 <li>CTO as a service</li>
                 <li>All services</li>
               </ul>
-              <h3 className="font-bold mt-6 mb-2 text-2xl">Products</h3>
+              <h3 className="font-mono font-bold mt-6 mb-2 text-2xl">
+                Products
+              </h3>
             </div>
 
             {/* Center Section */}
             <div>
-              <h3 className="font-bold text-2xl mb-2">Pricing</h3>
-              <h3 className="font-bold text-2xl mb-2">Tech Due Diligence</h3>
-              <h3 className="font-bold text-2xl mb-2">MVP Calculator</h3>
-              <h3 className="font-bold text-2xl mt-6 mb-2">Company</h3>
-              <ul className="space-y-2 text-lg">
+              <h3 className="font-mono font-bold text-2xl mb-2">Pricing</h3>
+              <h3 className="font-mono font-bold text-2xl mb-2">
+                Tech Due Diligence
+              </h3>
+              <h3 className="font-mono font-bold text-2xl mb-2">
+                MVP Calculator
+              </h3>
+              <h3 className="font-mono font-bold text-2xl mt-6 mb-2">
+                Company
+              </h3>
+              <ul className="space-y-2 font-sans text-lg">
                 <li>Studio approach</li>
                 <li>About us</li>
               </ul>
@@ -96,18 +108,26 @@ const Navbar = () => {
 
             {/* Center Section */}
             <div>
-              <h3 className="font-bold text-xl mb-2">Pricing</h3>
-              <h3 className="font-bold text-xl mb-2">Tech Due Diligence</h3>
-              <h3 className="font-bold text-xl mb-2">MVP Calculator</h3>
-              <h3 className="font-bold text-xl mb-2">Pricing</h3>
-              <h3 className="font-bold text-xl mb-2">Tech Due Diligence</h3>
-              <h3 className="font-bold text-xl mb-2">MVP Calculator</h3>
+              <h3 className="font-mono font-bold text-xl mb-2">Pricing</h3>
+              <h3 className="font-mono font-bold text-xl mb-2">
+                Tech Due Diligence
+              </h3>
+              <h3 className="font-mono font-bold text-xl mb-2">
+                MVP Calculator
+              </h3>
+              <h3 className="font-mono font-bold text-xl mb-2">Pricing</h3>
+              <h3 className="font-mono font-bold text-xl mb-2">
+                Tech Due Diligence
+              </h3>
+              <h3 className="font-mono font-bold text-xl mb-2">
+                MVP Calculator
+              </h3>
             </div>
 
             {/* Right Section */}
             <div>
-              <h3 className="font-bold text-2xl mb-2">Contact</h3>
-              <ul className="text-lg space-y-2">
+              <h3 className="font-mono font-bold text-2xl mb-2">Contact</h3>
+              <ul className="font-sans text-lg space-y-2">
                 <li>hi@upsilonit.com</li>
                 <li>+1 (650) 995-5553</li>
                 <li>30 N Gould St Ste R, Sheridan, WY, USA</li>
