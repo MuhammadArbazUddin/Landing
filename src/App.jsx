@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Pages from "./pages";
-import { Navbar, PrivacyPolicy } from "./components/components";
+import { Navbar, PrivacyPolicy, ScrollToTop } from "./components/components";
 import Lenis from "@studio-freight/lenis";
 
 const App = () => {
@@ -32,6 +32,7 @@ const App = () => {
         <Route path="/" element={<Pages />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
+      <ScrollToTop />
     </Router>
   );
 };
