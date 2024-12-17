@@ -2,8 +2,8 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className=" text-gray-800 p-10 px-40 m-6 ">
-      <h1 className="text-3xl font-mono font-bold pb-6 text-center">
+    <div className=" text-gray-800 sm:p-10 sm:px-40 m-6 ">
+      <h1 className="text-3xl font-mono font-bold pb-6 sm:text-center">
         Privacy Policy
       </h1>
 

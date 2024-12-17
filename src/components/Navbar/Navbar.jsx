@@ -21,7 +21,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex items-center justify-between py-4 bg-[#F3F6F7] border-b sticky top-0 z-50 px-4 sm:px-16 navbar">
+    <nav className="flex items-center justify-between py-4 bg-[#fff] border-b sticky top-0 z-50 px-4 sm:px-16 navbar">
       {/* Logo */}
       <div className="flex items-center space-x-1">
         <a href="/" aria-label="Home">
