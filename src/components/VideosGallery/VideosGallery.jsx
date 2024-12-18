@@ -1,188 +1,108 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import "./VideoGallery.css";
+// import video1 from "../../assets/videos/feroze.mp4";
+// import video2 from "../../assets/videos/andra.mp4";
+// import video3 from "../../assets/videos/bohemia.mp4";
+// import video4 from "../../assets/videos/farhan.mp4";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const VideosGallery = () => {
+// Start of Selection
+const videoData = [
+  {
+    id: 1,
+    title: "Social Media Marketing",
+    url: "https://www.w3schools.com/html/mov_bbb.mp4",
+    thumbnail: "https://via.placeholder.com/300x200.png?text=Intro+to+React",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto provident corrupti.lorem5ad lsakjda sajbdsaj dsahdas j sakjdanskd jkasd",
+  },
+  {
+    id: 2,
+    title: "Social Media Marketing",
+    url: "https://www.w3schools.com/html/mov_bbb.mp4",
+    thumbnail: "https://via.placeholder.com/300x200.png?text=JavaScript+Basics",
+    description:
+      "Lorem ipsum A sit amet consectetur adipisicing elit. Ab architecto provident corrupti.lorem5ad lsakjda sajbdsaj dsahdas j sakjdanskd jkasd",
+  },
+  // {
+  //   id: 3,
+  //   title: "Social Media Marketing",
+  //   url: "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
+  //   thumbnail: "https://via.placeholder.com/300x200.png?text=CSS+Flexbox+Guide",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Social Media Marketing",
+  //   url: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
+  //   thumbnail:
+  //     "https://via.placeholder.com/300x200.png?text=Understanding+the+DOM",
+  // },
+];
+
+const VideoGallery = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
-      <div className="flex flex-col md:flex-row flex-1 items-center gap-10 max-w-[75rem] mx-auto">
-        {/* Video Box */}
-        <div
-          className="relative bg-gray-300 rounded-lg overflow-hidden shadow-lg"
-          style={{ width: "400px", height: "520px" }} // Changed height to 520px
-        >
-          <div className="relative">
-            {/* Custom video */}
-            <video className="w-full h-full">
-              <source src="path/to/your/custom-video1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button className="bg-white p-4 rounded-full shadow-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  className="w-10 h-10 text-gray-700"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          {/* Title and Paragraph */}
-          <div className="bg-yellow-400 text-center py-4 absolute bottom-0 w-full cursor-pointer hover:bg-yellow-300">
-            <h2 className="text-black font-bold text-lg">Video Title 1</h2>
-            <p className="text-black">This is a description for video 1.</p>
-          </div>
-        </div>
-        {/* Video Box */}
-        <div
-          className="relative bg-gray-300 rounded-lg overflow-hidden shadow-lg"
-          style={{ width: "400px", height: "520px" }} // Changed height to 520px
-        >
-          <div className="relative">
-            {/* Custom video */}
-            <video className="w-full h-full ">
-              <source src="path/to/your/custom-video2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button className="bg-white p-4 rounded-full shadow-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  className="w-10 h-10 text-gray-700"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          {/* Title and Paragraph */}
-          <div className="bg-yellow-400 text-center absolute bottom-0 w-full py-4 cursor-pointer hover:bg-yellow-300">
-            <h2 className="text-black font-bold text-lg">Video Title 2</h2>
-            <p className="text-black">This is a description for video 2.</p>
-          </div>
-        </div>
-        {/* Video Box */}
-        <div
-          className="relative bg-gray-300 rounded-lg overflow-hidden shadow-lg"
-          style={{ width: "400px", height: "520px" }} // Changed height to 520px
-        >
-          <div className="relative">
-            {/* Custom video */}
-            <video className="w-full h-full">
-              <source src="path/to/your/custom-video3.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button className="bg-white p-4 rounded-full shadow-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  className="w-10 h-10 text-gray-700 "
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          {/* Title and Paragraph */}
-          <div className="bg-yellow-400 text-center py-4 cursor-pointer absolute bottom-0 w-full hover:bg-yellow-300">
-            <h2 className="text-black font-bold text-lg">Video Title 3</h2>
-            <p className="text-black">This is a description for video 3.</p>
-          </div>
-        </div>
+    <>
+      <h1 className="video-h1 font-mono font-bold">
+        Trusted by 250+ Online Brands
+      </h1>
+      <div className="video-gallery">
+        {videoData.map((video) => (
+          <VideoItem key={video.id} video={video} />
+        ))}
       </div>
-    </section>
+    </>
   );
 };
 
-export default VideosGallery;
-// import React, { useRef, useEffect } from "react";
+const VideoItem = ({ video }) => {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(true); // Start as true for autoplay
 
-// const VideosGallery = () => {
-//   const videoRef = useRef(null);
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
 
-//   useEffect(() => {
-//     const video = videoRef.current;
-//     const start = 4.31;
-//     const end = 9.48;
+  return (
+    <div className="video-item">
+      <div className="video-container">
+        <video
+          className="video"
+          ref={videoRef}
+          autoPlay
+          muted // Muted to allow autoplay in most browsers
+          loop // Optional: makes the video loop
+        >
+          <source src={video.url} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* Play button */}
+        <button
+          className="play-button"
+          onClick={handlePlayPause}
+          style={{ display: isPlaying ? "none" : "block" }}
+        >
+          <i className="fas fa-play"></i> {/* Font Awesome play icon */}
+        </button>
+        {/* Pause button */}
+        <button
+          className="pause-button"
+          onClick={handlePlayPause}
+          style={{ display: isPlaying ? "block" : "none" }}
+        >
+          <i className="fas fa-pause"></i> {/* Font Awesome pause icon */}
+        </button>
+      </div>
+      <div className="text-center p-4">
+        <h2 className="video-h2 font-bold font-mono">{video.title}</h2>
+        <p className="pb-2 font-sans text-gray-800">{video.description}</p>
+      </div>
+    </div>
+  );
+};
 
-//     if (!video) return;
-
-//     const handleTimeUpdate = () => {
-//       if (video.currentTime >= end) {
-//         video.currentTime = start; // Reset to the start time
-//       }
-//     };
-
-//     video.addEventListener("timeupdate", handleTimeUpdate);
-
-//     return () => {
-//       video.removeEventListener("timeupdate", handleTimeUpdate);
-//     };
-//   }, []);
-
-//   return (
-//     <div className="p-4">
-//       <h1 className="text-2xl font-bold text-center mb-4">Videos Gallery</h1>
-//       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-//         <div className="relative bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-//           <video
-//             ref={videoRef}
-//             // src="https://lewhunt.github.io/assets/fitness/squats-720p.mp4"
-//             autoPlay
-//             controls
-//             muted
-//             className="w-full h-full"
-//           />
-//           <div className="absolute inset-0 flex items-center justify-center">
-//             <button className="bg-white p-4 rounded-full shadow-lg">
-//               <svg
-//                 // xmlns="http://www.w3.org/2000/svg"
-//                 fill="currentColor"
-//                 viewBox="0 0 24 24"
-//                 className="w-10 h-10 text-gray-700"
-//               >
-//                 <path d="M8 5v14l11-7z" />
-//               </svg>
-//             </button>
-//           </div>
-//           <div className="bg-yellow-400 text-center py-4 cursor-pointer hover:bg-yellow-300">
-//             <h2 className="text-black font-bold text-lg">Video Title 1</h2>
-//             <p className="text-black">This is a description for video 1.</p>
-//           </div>
-//         </div>
-//         <div className="relative bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-//           <video
-//             // src="https://lewhunt.github.io/assets/fitness/squats-720p.mp4"
-//             autoPlay
-//             controls
-//             muted
-//             className="w-full h-full"
-//           />
-//           <div className="absolute inset-0 flex items-center justify-center">
-//             <button className="bg-white p-4 rounded-full shadow-lg">
-//               <svg
-//                 // xmlns="http://www.w3.org/2000/svg"
-//                 fill="currentColor"
-//                 viewBox="0 0 24 24"
-//                 className="w-10 h-10 text-gray-700"
-//               >
-//                 <path d="M8 5v14l11-7z" />
-//               </svg>
-//             </button>
-//           </div>
-//           <div className="bg-yellow-400 text-center py-4 cursor-pointer hover:bg-yellow-300">
-//             <h2 className="text-black font-bold text-lg">Video Title 2</h2>
-//             <p className="text-black">This is a description for video 2.</p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default VideosGallery;
+export default VideoGallery;
