@@ -9,6 +9,7 @@ import {
   ProjectDiscovery,
   StatsLogosSlider,
   StepsScroll,
+  VideosGallery,
 } from "./components/components";
 
 const Pages = () => {
@@ -19,6 +20,7 @@ const Pages = () => {
       <ManOnScroll />
       <ProjectDiscovery />
       <CardVerticleSlider />
+      {/* <VideosGallery /> */}
       {/* <StepsScroll /> */}
       <Contact />
       <StatsLogosSlider />

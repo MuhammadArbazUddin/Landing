@@ -10,3 +10,4 @@ export { default as About } from "./About/About";
 export { default as Contact } from "./Contact/Contact";
 export { default as PrivacyPolicy } from "./PrivacyPolicy/PrivacyPolicy";
 export { default as ScrollToTop } from "./ScrollToTop/ScrollToTop";
+export { default as VideosGallery } from "./VideosGallery/VideosGallery";

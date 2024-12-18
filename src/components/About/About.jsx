@@ -7,18 +7,8 @@ const About = () => {
       className="flex flex-col items-center md:flex-row min-h-screen bg-[#FAED00]"
       id="about-us"
     >
-      {/* Left Section */}
-      <div className="w-full sm:w-[50%] p-6 md:p-16 space-y-6 md:sticky md:top-0">
-        <img
-          src="https://www.greater-thought.com/wp-content/uploads/2020/12/websites-digital-icon-comp3.gif"
-          alt=""
-          className="rounded-lg w-[25rem]"
-        />
-      </div>
-
-      {/* Right Section */}
       <motion.div
-        className="w-full sm:w-[70%] pt-2 md:p-16 md:px-[10rem] bg-white rounded-l-lg border-2 border-white"
+        className="w-full sm:w-[70%] pt-2 md:p-16 md:px-[10rem] bg-white  border-2 border-white"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
@@ -66,6 +56,16 @@ const About = () => {
           </div>
         </motion.div>
       </motion.div>
+      {/* Left Section */}
+      <div className="w-full sm:w-[50%] p-6 md:p-16 space-y-6 md:sticky md:top-0">
+        <img
+          src="https://www.greater-thought.com/wp-content/uploads/2020/12/websites-digital-icon-comp3.gif"
+          alt=""
+          className="rounded-lg w-[25rem]"
+        />
+      </div>
+
+      {/* Right Section */}
     </div>
   );
 };

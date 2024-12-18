@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="bg-cover bg-center  bg-fixed bg-no-repeat"
+      className="bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
           "url('https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/662e88bd0acef9692037ebd7_discovery-numbers-bg.webp')",
