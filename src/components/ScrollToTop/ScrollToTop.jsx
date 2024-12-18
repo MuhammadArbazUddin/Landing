@@ -30,7 +30,7 @@ const ScrollToTop = () => {
     <button
       id="scrollToTopBtn"
       onClick={scrollToTop}
-      className="fixed right-5 bottom-5 hidden bg-[#FAED00] text-white border border-gray-300 rounded-lg p-2 cursor-pointer"
+      className="fixed right-5 z-[99999] bottom-5 hidden bg-[#FAED00] text-white border border-gray-300 rounded-lg p-2 cursor-pointer"
     >
       <FaArrowUp /> {/* Adding the React icon */}
     </button>

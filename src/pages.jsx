@@ -20,7 +20,7 @@ const Pages = () => {
       <ManOnScroll />
       <ProjectDiscovery />
       <CardVerticleSlider />
-      {/* <VideosGallery /> */}
+      <VideosGallery />
       {/* <StepsScroll /> */}
       <Contact />
       <StatsLogosSlider />
