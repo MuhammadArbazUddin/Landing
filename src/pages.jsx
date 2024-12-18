@@ -17,13 +17,13 @@ const Pages = () => {
     <div>
       <Hero />
       <About />
+      <StatsLogosSlider />
       <ManOnScroll />
       <ProjectDiscovery />
       <CardVerticleSlider />
       <VideosGallery />
       {/* <StepsScroll /> */}
       <Contact />
-      <StatsLogosSlider />
       <Footer />
     </div>
   );

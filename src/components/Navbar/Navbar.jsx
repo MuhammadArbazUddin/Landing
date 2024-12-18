@@ -160,18 +160,18 @@ const Navbar = () => {
                   </a>
                 </li>
               </ul>
-              <ul className="space-y-2 font-sans text-lg">
+              <ul className="space-y-2 font-sans text-lg hidden sm:block">
                 <li>Discovery phase services</li>
                 <li>CTO as a service</li>
                 <li>All services</li>
               </ul>
-              <h3 className="font-mono font-bold mt-6 mb-2 text-2xl">
+              <h3 className="font-mono font-bold mt-6 mb-2 text-2xl hidden sm:block">
                 Products
               </h3>
             </div>
 
             {/* Center Section */}
-            <div>
+            <div className="hidden sm:block">
               <h3 className="font-mono font-bold text-2xl mb-2">Pricing</h3>
               <h3 className="font-mono font-bold text-2xl mb-2">
                 Tech Due Diligence
@@ -189,7 +189,7 @@ const Navbar = () => {
             </div>
 
             {/* Center Section */}
-            <div>
+            <div className="hidden sm:block">
               <h3 className="font-mono font-bold text-xl mb-2">Pricing</h3>
               <h3 className="font-mono font-bold text-xl mb-2">
                 Tech Due Diligence
@@ -207,7 +207,7 @@ const Navbar = () => {
             </div>
 
             {/* Right Section */}
-            <div>
+            <div className="hidden sm:block">
               <h3 className="font-mono font-bold text-2xl mb-2">Contact</h3>
               <ul className="font-sans text-lg space-y-2">
                 <li>hi@upsilonit.com</li>

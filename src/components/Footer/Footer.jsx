@@ -174,7 +174,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-10 border-t border-gray-700 pt-4 text-base text-gray-400 flex flex-col md:flex-row justify-between">
-          <p className="font-sans">© 2024 Upsilon LLC. All Rights Reserved</p>
+          <p className="font-sans">©Techxudo All Rights Reserved</p>
           <div className="flex space-x-4">
             <NavLink
               to="/privacy-policy"

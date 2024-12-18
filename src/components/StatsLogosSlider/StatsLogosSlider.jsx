@@ -5,19 +5,18 @@ import "slick-carousel/slick/slick-theme.css";
 
 const StatsLogosSlider = () => {
   const stats = [
-    { text: "25 products delivered", icon: "👑" },
-    { text: "$177M raised by clients", icon: "💰" },
-    { text: "10+ years in the market", icon: "⭐" },
-    { text: "50+ experts onboard", icon: "🧑‍💻" },
-    { text: "50+ experts onboard", icon: "🧑‍💻" },
+    { text: "We Deliver The Best", icon: "👑" },
+    { text: "We Have An Expert Team", icon: "💰" },
+    { text: "10+ Years In The Bussiness", icon: "⭐" },
+    { text: "100% Satisfied Clients", icon: "🧑‍💻" },
   ];
 
-  const logos = [
-    "https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/63755a29ff893a88217aa9d0_thoughtspot-white.webp",
-    "https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/63755a29ff893a88217aa9d0_thoughtspot-white.webp",
-    "https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/63755a29ff893a88217aa9d0_thoughtspot-white.webp",
-    "https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/63755a29ff893a88217aa9d0_thoughtspot-white.webp",
-    "https://cdn.prod.website-files.com/633438ac0ff91a5041d3188b/63755a29ff893a88217aa9d0_thoughtspot-white.webp",
+  const statsLogo = [
+    { text: "Socially Wired" },
+    { text: "Socially Wired" },
+    { text: "Socially Wired" },
+    { text: "Socially Wired" },
+    { text: "Socially Wired" },
   ];
 
   const sliderSettings = {
@@ -56,13 +55,14 @@ const StatsLogosSlider = () => {
       <div className="relative w-[110vw] left-1/2 -translate-x-1/2 mt-3">
         <div className="bg-black py-4 rotate-[2deg] mb-10 overflow-hidden">
           <Slider {...sliderSettings}>
-            {logos.map((logo, index) => (
-              <div key={index} className="px-8">
-                <img
-                  src={logo}
-                  alt="Client logo"
-                  className="h-12 w-auto object-contain"
-                />
+            {statsLogo.map((stat, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-4 px-8 whitespace-nowrap"
+              >
+                <p className="text-white font-bold text-2xl py-2">
+                  {stat.text}
+                </p>
               </div>
             ))}
           </Slider>

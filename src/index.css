@@ -16,7 +16,7 @@
 }
 
 .button-54 {
-  @apply font-sans text-base bg-[#FAED00] tracking-wider uppercase text-black cursor-pointer border border-black py-1 px-2 relative;
+  @apply font-sans text-base bg-[#FAED00] tracking-wider uppercase text-black cursor-pointer border border-black py-1 px-2 relative transition-all duration-300;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
     5px 5px 0px 0px;
 }
