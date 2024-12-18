@@ -16,34 +16,41 @@ const Footer = () => {
           {/* Address Section */}
           <div>
             <p className="mb-4 font-sans">
-              <span role="img" aria-label="USA Flag">
-                🇺🇸
-              </span>{" "}
-              30 N Gould St Ste R, Sheridan, WY 82801
+              <span role="img" aria-label="USA Flag"></span> Toronto, Ontario
+              Canada
             </p>
-            <p className="mb-4 font-sans">
+            {/* <p className="mb-4 font-sans">
               <span role="img" aria-label="Estonia Flag">
                 🇪🇪
               </span>{" "}
               Vesivärava tn 50 201, Tallinn, 10152
-            </p>
-            <p className="mb-2 font-sans">hi@upsilonit.com</p>
-            <p className="font-sans">+1 (650) 995-5553</p>
+            </p> */}
+            <p className="mb-2 font-sans">info@sociallywired.com</p>
+            <p className="font-sans">+1 519 697 8425</p>
             <div className="flex space-x-4 mt-4">
               {/* Social Icons */}
-              <a href="/" className="hover:text-gray-400 text-xl">
-                <FaMedium />
-              </a>
-              <a href="/" className="hover:text-gray-400 text-xl">
+              <a
+                href="https://www.instagram.com/sociallywiredinc/profilecard/?igsh=MTNnMnFzdWx1YW5pZQ%3D%3D"
+                target="_blank"
+                className="hover:text-gray-400 text-xl"
+              >
                 <FaInstagram />
               </a>
-              <a href="/" className="hover:text-gray-400 text-xl">
+              {/* <a href="/" className="hover:text-gray-400 text-xl">
                 <FaTwitter />
-              </a>
-              <a href="/" className="hover:text-gray-400 text-xl">
+              </a> */}
+              <a
+                href="https://www.linkedin.com/company/socially-wired-inc/"
+                target="_blank"
+                className="hover:text-gray-400 text-xl"
+              >
                 <FaLinkedin />
               </a>
-              <a href="/" className="hover:text-gray-400 text-xl">
+              <a
+                href="https://www.facebook.com/people/Socially-wired-Inc/61565652324656/?mibextid=LQQJ4d&rdid=3xRLjcFFVTLi7Uot&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FCh4GsGhjoMJXrrVo%2F%3Fmibextid%3DLQQJ4d"
+                target="_blank"
+                className="hover:text-gray-400 text-xl"
+              >
                 <FaFacebook />
               </a>
             </div>
@@ -55,37 +62,32 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="/" className="hover:text-gray-400 font-sans">
-                  Discovery phase services
+                  Youtube
                 </a>
               </li>
               <li>
                 <a href="/" className="hover:text-gray-400 font-sans">
-                  For early stage
+                  Meta
                 </a>
               </li>
               <li>
                 <a href="/" className="hover:text-gray-400 font-sans">
-                  For growth stage
+                  Snapchat
                 </a>
               </li>
               <li>
                 <a href="/" className="hover:text-gray-400 font-sans">
-                  Slack bot development
+                  Tictok
                 </a>
               </li>
-              <li>
-                <a href="/" className="hover:text-gray-400 font-sans">
-                  CTO as a service
-                </a>
-              </li>
-              <li>
+              {/* <li>
                 <a
                   href="/"
                   className="hover:text-gray-400 font-bold last-of-type:underline text-sm font-sans"
                 >
                   All services
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -94,53 +96,62 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="#services"
                   className="text-xl font-bold hover:text-gray-400 font-sans"
                 >
-                  Pricing
+                  Services
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#about-us"
                   className="text-xl font-bold hover:text-gray-400 font-sans"
                 >
-                  Tech due diligence
+                  About Us
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#our-work"
                   className="text-xl font-bold hover:text-gray-400 font-sans"
                 >
-                  MVP calculator
+                  Our Work
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#our-offers"
+                  className="text-xl font-bold hover:text-gray-400 font-sans"
+                >
+                  Our Offers
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact-us"
+                  className="text-xl font-bold hover:text-gray-400 font-sans"
+                >
+                  Contact Us
                 </a>
               </li>
             </ul>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="/"
-                  className="text-xl font-bold hover:text-gray-400 font-sans"
-                >
-                  Company
-                </a>
-              </li>
-              <li>
+            {/* <ul className="space-y-2"> */}
+
+            {/* <li>
                 <a href="/" className="text-sm hover:text-gray-400 font-sans">
                   Studio approach
                 </a>
-              </li>
-              <li>
+              </li> */}
+            {/* <li>
                 <a href="/" className="text-sm hover:text-gray-400 font-sans">
                   About us
                 </a>
-              </li>
-            </ul>
+              </li> */}
+            {/* </ul> */}
           </div>
 
           {/* Resources */}
-          <div>
+          {/* <div>
             <h4 className="font-mono font-bold mb-4 text-xl">Case studies</h4>
             <ul className="space-y-2">
               <li>
@@ -169,7 +180,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Footer Bottom */}
@@ -182,12 +193,12 @@ const Footer = () => {
             >
               Privacy Policy
             </NavLink>
-            <a href="/" className="hover:text-white font-sans">
+            {/* <a href="/" className="hover:text-white font-sans">
               Terms of Service
             </a>
             <a href="/" className="hover:text-white font-sans">
               Cookie Policy
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

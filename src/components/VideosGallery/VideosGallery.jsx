@@ -42,7 +42,7 @@ const videoData = [
 const VideoGallery = () => {
   return (
     <>
-      <h1 className="video-h1 font-mono font-bold">
+      <h1 className="video-h1 font-mono font-bold" id="our-work">
         Trusted by 250+ Online Brands
       </h1>
       <div className="video-gallery">
